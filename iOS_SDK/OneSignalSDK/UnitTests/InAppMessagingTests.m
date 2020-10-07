@@ -97,15 +97,15 @@ NSInteger const DELAY = 60;
             @"url" : @"https://www.onesignal.com",
             @"url_target" : @"browser",
             @"close" : @false,
-            @"pageId": @"test_page_id",
+            @"page_id": @"test_page_id",
         }
     }];
     
     testPageChangeEvent = [OSInAppMessageBridgeEvent instanceWithJson:@{
         @"type" : @"page_change",
         @"body" : @{
-            @"pageIndex" : @"1",
-            @"pageId" : @"test_id",
+            @"page_index" : @"1",
+            @"page_id" : @"test_id",
         }
     }];
     

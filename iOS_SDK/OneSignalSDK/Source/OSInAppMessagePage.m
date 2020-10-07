@@ -48,11 +48,11 @@
 + (instancetype _Nullable)instanceWithJson:(NSDictionary * _Nonnull)json {
     OSInAppMessagePage *page = [OSInAppMessagePage new];
     
-    if ([json[@"pageId"] isKindOfClass:[NSString class]])
-        page.pageId = json[@"pageId"];
+    if ([json[@"page_id"] isKindOfClass:[NSString class]])
+        page.pageId = json[@"page_id"];
     
-    if ([json[@"pageIndex"] isKindOfClass:[NSNumber class]])
-        page.pageIndex = json[@"pageIndex"];
+    if ([json[@"page_index"] isKindOfClass:[NSNumber class]])
+        page.pageIndex = json[@"page_index"];
     
     return page;
 }
